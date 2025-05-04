@@ -20,5 +20,20 @@ contract TodoList {
     mapping(uint => Todo) public todos;
     uint[] public todoIds;
 
-    
+    // 5. Event
+    event TodoAdded(uint id, string content);
+
+    // Track next ID
+    uint private nextId = 0;
+
+    // 4. Functions
+    function addTodo(string memory _content) public {
+        uint currentId = nextId;
+        todos[currentId] = Todo(currentId, _content, Status.Pending);
+        todoIds.push(currentId);
+        emit TodoAdded(currentId, _content);
+        nextId++;
+    }
+
+   
 }
