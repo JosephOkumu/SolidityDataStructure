@@ -9,5 +9,12 @@ contract TodoList {
         Completed
     }
 
+    // 2. Todo Struct
+    struct Todo {
+        uint id;
+        string content;
+        Status status;
+    }
+
     
 }
