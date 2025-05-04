@@ -1,4 +1,4 @@
-# SolidityDataStructure
+# SolidityToDo
 A smart contract utilizing solidity data structure and control flows in a ToDo.
 
 ## Features
