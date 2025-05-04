@@ -16,5 +16,9 @@ contract TodoList {
         Status status;
     }
 
+    // 3. Mapping and Array
+    mapping(uint => Todo) public todos;
+    uint[] public todoIds;
+
     
 }
